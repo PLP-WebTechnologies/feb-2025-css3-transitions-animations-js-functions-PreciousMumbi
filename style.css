@@ -1,0 +1,29 @@
+body {
+    transition: background-color 0.5s;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .dark-theme {
+    background-color: #333;
+    color: white;
+  }
+  
+  #animateBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #animateBtn.animate {
+    animation: bounce 0.5s;
+  }
+  
+  @keyframes bounce {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
